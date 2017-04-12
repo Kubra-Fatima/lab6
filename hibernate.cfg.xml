@@ -4,8 +4,6 @@
 
 <hibernate-configuration>
     <session-factory>
-
-        <property name="hbm2ddl.auto">update</property>
         <property name="hibernate.dialect">
             org.hibernate.dialect.MySQLDialect
         </property>
@@ -15,18 +13,17 @@
 
         <!-- Assume test is the database name -->
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost:3307/geocity
+            jdbc:mysql://localhost:3306/geocity
         </property>
         <property name="hibernate.connection.username">
             root
         </property>
         <property name="hibernate.connection.password">
-
+        helloworld
         </property>
 
         <!-- List of XML mapping files -->
-        <mapping resource="citiesdata.hbm.xml"/>
-        <mapping class="Citiesdata"/>
+       <!-- <mapping resourcitydatation.hbm.xml"/>-->
 
     </session-factory>
 </hibernate-configuration>
